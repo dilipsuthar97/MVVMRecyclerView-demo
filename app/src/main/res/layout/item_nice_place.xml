@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:padding="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:contextClickable="true"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:civ_shadow_gravity="bottom"
+        app:civ_shadow_color="@android:color/darker_gray"
+        app:civ_shadow_radius="1"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Beautiful paris"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>
